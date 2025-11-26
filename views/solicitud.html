@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formularios</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header class="p-3 mb-2 bg-secondary text-white text-center">
+      <h1>José Moisés</h1>
+      <p>Formulario de distintas áreas</p>
+    </header>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../index.html">Usuario</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../views/profesional.html">Profesional</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../views/medico.html">Médico</a>
+            </li>
+             <li class="nav-item">
+              <a class="nav-link" href="../views/pedido.html">Pedido</a>
+            </li>
+             <li class="nav-item">
+              <a class="nav-link" href="../views/solicitud.html">Solicitud</a>
+            </li>
+              <li class="nav-item">
+              <a class="nav-link" href="../views/evaluacion.html">Evaluación</a>
+              </li>
+            
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main>
+       <div class="container mt-5">
+      <h1 class="mb-4">Formulario para subir CV</h1>
+      
+        
+        <div class="mb-3">
+          <label class="form-label">Nombre completo</label>
+          <div class="input-group">
+            <span class="input-group-text">First and last name</span>
+            <input type="text" aria-label="First name" class="form-control" placeholder="Nombre">
+            <input type="text" aria-label="Last name" class="form-control" placeholder="Apellido">
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Email</label>
+          <div class="input-group">
+            <span class="input-group-text" id="visible-addon">@</span>
+            <input type="text" class="form-control" placeholder="usuario@correo.com" aria-label="Username" aria-describedby="visible-addon">
+            <input type="text" class="form-control d-none" placeholder="Hidden input" aria-label="Hidden input" aria-describedby="visible-addon">
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Teléfono</label>
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="inputGroup-sizing-default">Tel</span>
+            <input type="text" class="form-control" aria-label="Número de teléfono" aria-describedby="inputGroup-sizing-default" placeholder="Ej. 999-123-4567">
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Subir CV</label>
+          <div class="input-group mb-3">
+            <input type="file" class="form-control" id="inputGroupFile02">
+            <label class="input-group-text" for="inputGroupFile02">Upload</label>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Puesto solicitado</label>
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Selecciona un puesto</option>
+            <option value="1">Desarrollador Full Stack</option>
+            <option value="2">Diseñador UX/UI</option>
+            <option value="3">Analista de Datos</option>
+            <option value="4">Especialista en Marketing Digital</option>
+            <option value="5">Gerente de Proyectos</option>
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Expectativa salarial</label>
+          <div class="input-group mb-3">
+            <span class="input-group-text">$</span>
+            <span class="input-group-text">0.00</span>
+            <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)" placeholder="Ej. 15000.00">
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary mb-3 mt-3">Enviar solicitud</button>
+    </div>
+    </main>
+
+    <footer class="p-3 mb-2 bg-secondary text-white text-center">
+      <p class="bold">todos los derechos reservados</p>
+      <p>&copy; José Rodríguez</p>
+    </footer>
+  </body>
+</html>
